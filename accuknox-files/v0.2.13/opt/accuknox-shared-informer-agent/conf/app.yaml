@@ -1,0 +1,28 @@
+sis:
+#  node-details-endpoint: http://localhost:8080/sis/api/v1/sis/node-details
+
+#  pod-details-endpoint: http://localhost:8080/sis/api/v1/sis/pod-details
+ 
+#  namespace-details-endpoint: http://localhost:8080/sis/api/v1/sis/namespace-details
+
+ entity-endpoint: https://api.stage.accuknox.com/sis/api/v1/sis/entity
+ local-endpoint:  http://localhost:8080/sis/api/v1/sis/entity
+ 
+cms:
+ cms-endpoint: /cm/api/v1/cluster-management/retrieve-pods-and-its-nodes
+ base-url: https://api-stage.accuknox.com
+ cms-endpoint2: /cm/api/v1/cluster-management/retrieve-node-list
+
+kmux-topic: shared-event
+kmux-topic-prefix: persistent://accuknox/cluster-entity/
+heartbeat:
+  interval: 5m
+spire:
+  enable: false
+  agent: spire-agent.spire.svc.cluster.local:9091
+k8s:
+  enable: false
+
+psa:
+  violation-topic: persistent://accuknox/datapipeline/admissionevents
+  audit-webhook-port: 8080

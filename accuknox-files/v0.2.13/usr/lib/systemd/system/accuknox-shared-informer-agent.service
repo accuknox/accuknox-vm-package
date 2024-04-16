@@ -1,0 +1,11 @@
+[Unit]
+Description=Shared-Informer
+
+[Service]
+User=root
+KillMode=process
+WorkingDirectory=/opt/accuknox-shared-informer-agent/
+ExecStart=/opt/accuknox-shared-informer-agent/sia
+
+[Install]
+WantedBy=multi-user.target
