@@ -1,6 +1,0 @@
-kmux:
-  sink:
-    stream: knox-gateway
-
-knox-gateway:
-  server: "knox-gw.dev.accuknox.com:3000"
